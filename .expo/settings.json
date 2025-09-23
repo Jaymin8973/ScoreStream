@@ -1,3 +1,6 @@
 {
-  "urlRandomness": "kFLs6x4"
+  "urlRandomness": "kFLs6x4",
+  "dev": true,
+  "minify": false,
+  "https": false
 }
