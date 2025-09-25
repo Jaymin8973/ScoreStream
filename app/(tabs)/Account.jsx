@@ -73,7 +73,7 @@ const Account = () => {
                         <View>
                             <View className=" justify-center items-center ">
                                 <Image
-                                    source={{ uri: image }}
+                                    source={require("../../assets/images/User.jpg")}
                                     style={{ height: 150, width: 150, borderRadius: 100 }}
                                 />
                                 <TouchableOpacity className="absolute top-32 right-36 bg-[#353945] p-5 rounded-full" onPress={pickImage}>
@@ -88,7 +88,7 @@ const Account = () => {
                                         </Text>
                                         <TextInput
                                             className="border-b border-gray-300 text-xl pb-2"
-                                            value={formik.values.firstname}
+                                            value={"Jhon"}
                                             onChangeText={formik.handleChange('firstname')}
                                             onBlur={formik.handleBlur('firstname')}
                                         />
@@ -100,7 +100,7 @@ const Account = () => {
                                         </Text>
                                         <TextInput
                                             className="border-b border-gray-300 text-xl pb-2"
-                                            value={formik.values.lastname}
+                                            value={"Doe"}
                                             onChangeText={formik.handleChange('lastname')}
                                             onBlur={formik.handleBlur('lastname')}
                                         />
@@ -112,7 +112,7 @@ const Account = () => {
                                     </Text>
                                     <TextInput
                                         className="border-b border-gray-300 text-xl  pb-2"
-                                        value={formik.values.email}
+                                        value={"Test@gmail.com"}
                                         onChangeText={formik.handleChange('email')}
                                         onBlur={formik.handleBlur('email')}
                                         editable={false}
@@ -129,9 +129,7 @@ const Account = () => {
                                                 onPress={() => setOpen(true)}
                                             >
                                                 <Text className="text-gray-900 text-xl">
-                                                    {selectedValue
-                                                        ? options.find((opt) => opt.value === selectedValue)?.label
-                                                        : 'Select Gender'}
+                                                    Male
                                                 </Text>
                                             </TouchableOpacity>
 
@@ -172,7 +170,7 @@ const Account = () => {
                                         </Text>
                                         <TextInput
                                             className="border-gray-300 border-b text-xl pb-2"
-                                            value={formik.values.phone}
+                                            value={"+91 9825456545"}
                                             onChangeText={formik.handleChange('phone')}
                                             onBlur={formik.handleBlur('phone')}
                                         />
